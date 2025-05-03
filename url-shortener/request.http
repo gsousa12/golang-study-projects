@@ -1,0 +1,4 @@
+@baseUrl = http://localhost:8080
+
+POST {{baseUrl}}/short?url=https://www.google.com
+Accept: text/plain
