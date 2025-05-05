@@ -1,0 +1,16 @@
+{
+  "conversions": {
+    "USDBRL": {
+      "code": "USD",
+      "codein": "BRL",
+      "name": "Dólar Americano/Real Brasileiro",
+      "value": 18
+    },
+    "BRLUSD": {
+      "code": "BRL",
+      "codein": "USD",
+      "name": "Real Brasileiro/Dólar Americano",
+      "value": 564
+    }
+  }
+}

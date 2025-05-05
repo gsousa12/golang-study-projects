@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "id": "12345",
+      "balance": 1200000,
+      "country": "BR"
+    },
+    {
+      "id": "67890",
+      "balance": 500000,
+      "country": "USA"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package transfer;
+
+option go_package = "golang-simple_microservice-grpc/proto";
+
+message Account {
+  string id = 1;
+  int64 amount = 2;
+  string country = 3;
+}
+
+message TransferRequest {
+  Account senderAccount = 1;
+  Account receiverAccount = 2;
+  int64 transferAmount = 3;
+  string status = 4;
+  string reason = 5;
+}
+
+message TransferResponse {
+  string status = 1;
+  string reason = 2;
+  int64 convertedAmount = 3;
+}
+
+service TransactionService {
+  rpc ValidateBalance (TransferRequest) returns (TransferResponse);
+}
+
+service ConversionService {
+  rpc ConvertAmount (TransferRequest) returns (TransferResponse);
+}
